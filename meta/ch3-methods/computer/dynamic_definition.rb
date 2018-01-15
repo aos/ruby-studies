@@ -10,5 +10,5 @@ end
 obj = MyClass.new
 obj.my_method(2) # => 6
 
-require_relative '../test/assertions'
-assert_equals 6, obj.my_method(2)
+require_relative '../../test/assertions'
+assert_equals 7, obj.my_method(2)

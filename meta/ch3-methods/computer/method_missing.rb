@@ -1,4 +1,9 @@
-class Computer
+# Inheriting from BasicObject gives us a blank slate to work with so that
+# we do not have any clashing methods like ":display"
+
+# Inheriting from BasicObject also means we don't have to use 
+# 'respond_to_missing?'
+class Computer < BasicObject
   def initialize(computer_id, data_source)
     @id = computer_id
     @data_source = data_source

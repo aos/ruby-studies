@@ -8,8 +8,7 @@ end
 l = lambda { return 10 }
 double(l) # => 20
 
-# In a proc, 'return' returns from the scope where the proc itself
-# was defined
+# In a proc, 'return' returns from the scope where the proc itself was defined
 def another_double
   p = Proc.new { return 10 }
   result = p.call

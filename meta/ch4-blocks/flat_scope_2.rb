@@ -15,5 +15,6 @@ end
 
 MyClass.new.my_method
 
+# This is all possible because blocks inherit the surrounding scope (closures)
 require_relative '../test/assertions'
 assert_equals 'Success in the method', MyClass.new.my_method

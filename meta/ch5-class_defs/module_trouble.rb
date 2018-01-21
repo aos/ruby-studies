@@ -5,10 +5,8 @@ end
 # When a class includes a module, it gets the module's
 # instance methods -- not the class methods
 
-# In order to include MyModule's methods as class methods,
-# open the singleton class and include MyModule there but 
-# also make those methods in MyModule instance methods
-
+# Define class methods by mixing them into the class's 
+# singleton class
 # This is known as Class Extension
 class MyClass
   class << self
